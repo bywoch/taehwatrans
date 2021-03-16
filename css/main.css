@@ -71,3 +71,31 @@ button {width: 100%; height: 34px; background-color: #525050; color: #fff; text-
 .md_slt_txt {width: 40%;}
 .md_slt_txt a {display: inline-block; font-size: 18px; padding: 15px;}
 .md_slt_img {width: 56%; height: inherit; display: inline-block; background-color: #f5f5f5; margin-right: 4%; background: url(../img/ctt_img_01.png) 0 0 no-repeat; background-position: center; -webkit-background-size: contain; background-size: contain;}
+/*----------------------------------------*/
+
+.new_prdt {width: 100%; max-width: 1200px; /* width: 1200px;*/ margin: 0 auto; margin-top: 60px;}
+.ptdt_title {font-weight: bold; font-size: 30px; text-align: center;}
+.ptdt_box {width: 100%; height: 435px; background: url(../img/prdt_head_img_bg.jpg) 0 0 no-repeat; background-position: center; background-size: cover; border: 1px solid #bbb; position: relative; margin-top: 35px;}
+.prdt_txt {width: 300px; display: inline-block; margin-top: 50px; margin-left: 50px;}
+.prdt_txt strong {font-size: 34px;}
+.prdt_txt span {width: 50px; height: 2px; display: inline-block; background-color: #000; margin: 35px 0;}
+.prdt_txt p {}
+.prdt_txt a {display: inline-block; text-align: center; padding: 10px 24px; border: 1px solid #000; margin-top: 80px;}
+
+/*----------------------------------------*/
+
+.contents_allbox {width: 100%; max-width: 1200px; /*width: 1200px;*/ margin: 0 auto; margin-top: 60px;}
+.contents_title {width: 560px; height: 95px; margin: 0 auto; text-align: center; margin-top: 80px; /*margin-bottom: 60px;*/}
+.contents_title h2 {font-size: 26px;}
+.contents_title p {font-size: 12px; margin-top: 32px;}
+.contents_box {width: 33.333%; max-width: 400px; /*height: 400px;*/ height: 380px; border-left: 1px solid #ddd; float: left; /*margin-top: 114px;*/margin-top: 100px;}
+.contents {width: 90%; margin: 0 auto; text-align: center; display: block;}
+.ctt_img {width: 100%; /*height: 240px; background-color: #f5f5f5;*/ height: auto;}
+.ctt_img img {width: 100%; max-width: 280px; display: block; margin: 0 auto;}
+.contents h3 {font-size: 22px; margin: 32px 0;}
+.contents p {font-size: 14px;}
+
+/*----------------------------------------*/
+
+.bd_l_n {border-left: none;}
+.ds_bl_768 {display: none;}
