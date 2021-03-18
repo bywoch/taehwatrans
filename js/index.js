@@ -26,5 +26,24 @@ $(function () {
         }
     });
     win.trigger('resize');
-    
+
+    /*--------------------- PC SUB_MENU UP,DOWN SLIDER SCRIPT ---------------------*/
+
+    $('.drop').hide();
+
+    $('.pc .menu > ul > .drop_down').mouseover(function () {
+        $('.pc #header > .drop').stop().slideDown('fast');
+    });
+    $('.pc .menu > ul > .drop_down').mouseleave(function () {
+        $('.pc #header > .drop').stop().slideUp('fast');
+    });
+    $(".pc .menu > ul > li").mouseover(function () {
+        $(this).children(".pc .sub_menu").show().stop().slideDown('fast');
+    });
+    $(".pc .menu > ul > li").mouseleave(function () {
+        $(this).children(".pc .sub_menu").hide().stop().slideUp('fast', function () {
+            $(this).css('height', 'auto');
+        });
+    });
+
 });
