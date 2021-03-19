@@ -46,4 +46,31 @@ $(function () {
         });
     });
 
+    /*--------------------- TABLET, MOBILE SUB_MENU SLIDER SCRIPT ---------------------*/
+
+    //$(".tablet .sub_menu").hide();
+
+    var targetMobile = '.tablet .menu > ul > li > a.pe_n_768, .mobile .menu > ul > li > a.pe_n_768';
+    $(document).on('click', targetMobile, function () {
+        var ts = $(this);
+        var oldActive = $('.tablet .menu > ul > li > a.pe_n_768, .mobile .menu > ul > li > a.pe_n_768').filter('.on');
+        if (ts.hasClass('on')) {
+            oldActive.next().slideUp(200);
+            oldActive.removeClass('on');
+        } else {
+            oldActive.next().slideUp(200);
+            oldActive.removeClass('on');
+            ts.next().slideDown(200);
+            ts.addClass('on');
+        }
+        $(window).resize(function () {
+            var windowWidth = $(window).outerWidth();
+            if (windowWidth > 768) {
+                $('.pc .menu > ul > li > a').removeClass('on');
+                $('.pc .sub_menu').hide();
+            }
+        });
+        return false;
+    });
+
 });
