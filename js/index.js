@@ -119,4 +119,29 @@ $(function () {
 
     });
 
+    /*--------------------- MAIN PAGE SEARCH SCRIPT ---------------------*/
+
+    $('.pc .sc_tt_02 > p').on('click', function () {
+        $(".sc_tt_02").stop().animate({
+            width: "70%"
+        }, 500, "linear");
+        $(".sc_tt_01").stop().animate({
+            width: "30%"
+        }, 500, "linear");
+        $('.tt_01_l_txt, .tt_02_s_txt, .search_box').hide();
+        $('.tt_01_s_txt, .tt_02_l_txt, .md_slt_box').show();
+        return false;
+    });
+    $('.pc .sc_tt_01 > p').on('click', function () {
+        $(".sc_tt_01").stop().animate({
+            width: "70%"
+        }, 500, "linear");
+        $(".sc_tt_02").stop().animate({
+            width: "30%"
+        }, 500, "linear");
+        $('.tt_01_s_txt, .tt_02_l_txt, .md_slt_box').hide();
+        $('.tt_01_l_txt, .tt_02_s_txt, .search_box').show();
+        return false;
+    });
+
 });
