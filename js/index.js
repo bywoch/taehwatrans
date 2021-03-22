@@ -194,5 +194,21 @@ $(function () {
         }
         return false;
     });
+    var targetPpas = '.pp_as_ask_box > ul > li > a';
+    $(document).on('click', targetPpas, function () {
+        var ts = $(this);
+
+        var ppasActive = $('.pp_as_ask_box > ul > li > a').filter('.on');
+        if (ts.hasClass('on')) {
+            ppasActive.next().slideUp(200);
+            ppasActive.removeClass('on');
+        } else {
+            ppasActive.next().slideUp(200);
+            ppasActive.removeClass('on');
+            ts.next().slideDown(200);
+            ts.addClass('on');
+        }
+        return false;
+    });
 
 });
