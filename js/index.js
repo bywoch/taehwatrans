@@ -178,5 +178,21 @@ $(function () {
         }
         return false;
     });
+    var ppAsButton = '.pp_as_ask_box > ul > li';
+    $(document).on('click', ppAsButton, function () {
+        var ts = $(this);
+
+        var asActive = $('.pp_as_ask_box > ul > li').filter('.on');
+        if (ts.hasClass('on')) {
+            asActive.filter('.spcfct_slt .spcfct_table_box').slideUp(200);
+            asActive.removeClass('on');
+        } else {
+            asActive.filter('.spcfct_slt .spcfct_table_box').slideUp(200);
+            asActive.removeClass('on');
+            ts.filter('.spcfct_slt .spcfct_table_box').slideDown(200);
+            ts.addClass('on');
+        }
+        return false;
+    });
 
 });
