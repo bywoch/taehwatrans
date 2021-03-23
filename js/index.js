@@ -211,4 +211,35 @@ $(function () {
         return false;
     });
 
+    /*--------------------- SCROLL TOP EVENT BUTTON SCRIPT ---------------------*/
+
+    $('.btn-up').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.btn-up').stop().animate({
+                'bottom': '10px',
+                'opacity': .7
+            }, 300, "swing");
+        } else {
+            $('.btn-up').stop().animate({
+                'bottom': '-80px',
+                'opacity': 0
+            }, 300, "swing");
+        }
+        if ($(window).width() > 760) {
+            var st = $(window).scrollTop() + "px";
+            $('.left-menu').css({
+                "top": st
+            });
+        } else {
+            $('.left-menu').css({
+                "top": "0px"
+            });
+        }
+    });
+
 });
