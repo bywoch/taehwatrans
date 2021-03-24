@@ -242,4 +242,17 @@ $(function () {
         }
     });
 
+    /*----------------------------------------*/
+
+    $(window).scroll(function () {
+        var scr = $(window).scrollTop();
+        if (scr > 80) {
+            $(".pc .spl_search_wrap").css('position', 'fixed').css('top', '0px').css('z-index', '999');
+            $(".pc .nav_wrap").css('position', 'fixed').css('top', '51px').css('z-index', '999');
+        } else {
+            $(".pc .spl_search_wrap, .pc .nav_wrap").css('position', 'static');
+        }
+
+    });
+
 });
