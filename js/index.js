@@ -30,7 +30,6 @@ $(function () {
     /*--------------------- PC SUB_MENU UP,DOWN SLIDER SCRIPT ---------------------*/
 
     $('.drop').hide();
-
     $('.pc .menu > ul > .drop_down').mouseover(function () {
         $('.pc #header > .drop').stop().slideDown('fast');
     });
@@ -47,8 +46,6 @@ $(function () {
     });
 
     /*--------------------- TABLET, MOBILE SUB_MENU SLIDER SCRIPT ---------------------*/
-
-    //$(".tablet .sub_menu").hide();
 
     var targetMobile = '.tablet .menu > ul > li > a.pe_n_768, .mobile .menu > ul > li > a.pe_n_768';
     $(document).on('click', targetMobile, function () {
@@ -107,9 +104,8 @@ $(function () {
             'left': '-100%'
         }, 300);
         $('#container, #footer').show();
-        /*$('.header').css('position', 'static');*/
+        
         $(window).resize(function () {
-
             var windowWidth = $(window).outerWidth();
             if (windowWidth < 768) {
                 $('#container, #footer').show();
@@ -132,6 +128,7 @@ $(function () {
         $('.tt_01_s_txt, .tt_02_l_txt, .md_slt_box').show();
         return false;
     });
+
     $('.pc .sc_tt_01 > p').on('click', function () {
         $(".sc_tt_01").stop().animate({
             width: "70%"
@@ -162,6 +159,7 @@ $(function () {
         $('.pc .spcfct_box > .tb_03').css('opacity', '0');
     });
     $('.tablet .spcfct_slt .spcfct_table_box, .mobile .spcfct_slt .spcfct_table_box').hide();
+
     var targetSltButton = '.tablet .slt_a, .mobile .slt_a';
     $(document).on('click', targetSltButton, function () {
         var ts = $(this);
@@ -178,6 +176,7 @@ $(function () {
         }
         return false;
     });
+    
     var ppAsButton = '.pp_as_ask_box > ul > li';
     $(document).on('click', ppAsButton, function () {
         var ts = $(this);
@@ -194,6 +193,7 @@ $(function () {
         }
         return false;
     });
+
     var targetPpas = '.pp_as_ask_box > ul > li > a';
     $(document).on('click', targetPpas, function () {
         var ts = $(this);
@@ -218,6 +218,7 @@ $(function () {
             scrollTop: 0
         }, 500);
     });
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.btn-up').stop().animate({
@@ -257,6 +258,61 @@ $(function () {
 
     /*----------------------------------------*/
 
+    $(".nav_wrap li a").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 500);
+    });
+
+    /*----------------------------------------*/
+
+    $(".tab_btn_right").on('click', function () {
+        $(".tabs-content").animate({
+            scrollLeft: 1160
+        });
+    });
+
+    $('.tab_btn_left').off().on('click', function () {
+        $(".tabs-content").animate({
+            scrollLeft: 0
+        });
+    });
+
+    $('.tab_btn_left').css('opacity', '0');
+    $(".tabs-content").scroll(function () {
+        var scrollT = $(this).scrollLeft();
+        var scrollH = $(this).width();
+        var contentH = $(".tabs").width();
+        if (scrollT + scrollH >= contentH) {
+            $('.tab_btn_left').css('opacity', '1');
+            $('.tab_btn_right').css('opacity', '0');
+        }
+        if (scrollT + scrollH == contentH) {
+            $('.tab_btn_left').css('opacity', '0');
+            $('.tab_btn_right').css('opacity', '1');
+        }
+    });
+
+    /*----------------------------------------*/
+
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+
+        if ($(window).scrollTop() > 500) {
+
+            $(".pc .content_box_02").stop().animate({
+                'top': sct - 480
+            }, 500);
+        } else {
+            $(".pc .content_box_02").stop().animate({
+                top: '0'
+            }, 500);
+        }
+    });
+
+    /*----------------------------------------*/
+
     $('.content_box_02 > ul li a').on('click', function () {
         $('html,body').animate({
             scrollTop: $(this.hash).offset().top - 51
@@ -265,7 +321,7 @@ $(function () {
     });
 
     /*----------------------------------------*/
-    
+
     $(window).bind("pageshow", function (event) {
         if (event.originalEvent.persisted) {
             document.location.reload();
