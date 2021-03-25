@@ -255,4 +255,21 @@ $(function () {
 
     });
 
+    /*----------------------------------------*/
+
+    $('.content_box_02 > ul li a').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top - 51
+        }, 500);
+        return false;
+    });
+
+    /*----------------------------------------*/
+    
+    $(window).bind("pageshow", function (event) {
+        if (event.originalEvent.persisted) {
+            document.location.reload();
+        }
+    });
+
 });
