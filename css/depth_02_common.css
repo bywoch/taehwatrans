@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.spl_search_wrap {width: 100%; height: 54px; padding: 5px 0; border-bottom: 1px solid #e6e6e6; background-color: #fff;}
+.spl_search_box {width: 100%;height: 100%; max-width: 1200px; position: relative;}
+.spl_select_box {height: 100%; float: left; text-align: right; position: absolute; right: 0;}
+.spl_select_form {float: left; margin-left: 5px;}
+.spl_select {width: 270px; height: 44px; float: left; color: #666; padding: 7px;}
+.spl_select:focus {outline: none;}
+.icon_home {display: inline-block; float: left; padding: 10px;}
+.spl_select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(/img/icon_search_drrw.png) 210px 50% no-repeat; cursor: pointer;}
+
+/*----------------------------------------*/
+
+.spot_solct_allbox {width: 100%; height: 220px; background-color: #e6e6e6;}
+.spot_solct_box {width: 100%; max-width: 1200px; height: 100%; background: url(/img/depth_02_main_img_01_1.png) 0 0 no-repeat; -webkit-background-size: cover; background-size: cover; background-position: right;}
+.ssb_02 {background-image: url(/img/depth_02_main_img_02.png);}
+.ssb_03 {background-image: url(/img/depth_02_main_img_03_01.jpg);}
+.spot_txt_box {width: 100%; height: auto; position: relative; top: 50px; left: 10px;}
+.spot_txt_box h3 {font-size: 24px; font-weight: bold;}
+.spot_txt_box p {font-size: 14px;}
+
+.dep02_introduce_txt {margin: 20px 0;}
+.dep02_introduce_txt > p {max-width: 1200px; margin: 20px auto;}
+
+/*----------------------------------------*/
+
+.content_sol_allbox {width: 100%; max-width: 1200px; height: 100%;}
+.content_sol_box {width: 32%; height: 440px; margin-left: 2%; border: 1px solid #ddd; float: left; margin-top: 2%;}
+.sol_padding_box {padding: 2%;}
+.sol_img {width: 100%; height: 100%; max-height: 240px; border-bottom: 1px solid #00304a; overflow: hidden;}
+.sol_img a {display: block;}
+.sol_img img {/*width: 70%;*/ height: 100%; margin: 0 auto; display: block;}
+.sol_txt {margin-top: 25px; text-align: center;}
+.sol_txt h4 {font-size: 22px; height: 56px; color: #00304a;}
+.sol_txt p {height: 36px;}
+.sol_btn_box {width: 100%; text-align: center; margin: 10px 0;}
+.sol_btn {display: inline-block; border-radius: 15px; margin: auto; color: #fff; background-color: #355162; padding: 14px 52px; transition: all 0.5s;}
+.content_sol_box:hover .sol_btn {background-color: #dd1921;}
+
+.ml_0 {margin-left: 0;}
+
+.spot_txt_box, .dep02_introduce_txt, .sol_txt p {color: #6D6E70;}
