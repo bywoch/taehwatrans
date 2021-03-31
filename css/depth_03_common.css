@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url(main.css);
 @import url(depth_02_common.css);
 
@@ -35,3 +34,49 @@
 .acb_ct .prdt_dscrt {background: url(/img/visual_box_img14.jpg) 0 0 no-repeat;}
 
 .depth_03 .prdt_dscrt {background-position: center; background-size: cover;}
+
+/*----------------------------------------*/
+
+.prllgr {width: 100%; height: 300px; z-index: 0; background-color: #fff; -webkit-backface-visibility: hidden; backface-visibility: hidden; outline: 2px solid transparent; border: 0 solid transparent; border-width: 1px 0; -webkit-transform: translate(-50%, 0) skewY(-8.2deg); -ms-transform: translate(-50%, 0) skewY(-8.2deg); transform: translate(0%, -50%) skewY(-8.2deg);}
+
+/*----------------------------------------*/
+
+.visual_txt {width: 100%; text-align: center; position: relative; top: 200px;}
+.visual_txt p {font-size: 54px; font-weight: bold; color: #fff;}
+.visual_txt span {width: 50px; height: 2px; display: block; background-color: #fff; margin-top: 20px;}
+.spl_txt {width: 100%; height: 100%; position: relative; bottom: 200px; background-color: #fff; text-align: center;}
+.spl_txt p {width: 100%; max-width: 1200px; margin: 0 auto;}
+
+/*----------------------------------------*/
+
+.search_wrap {width: 100%; background-color: #4e5051; background: rgb(78, 80, 81); border-bottom: 1px solid #fff;}
+.depth_03 .search_box, .depth_03 .md_slt_box {position: static; width: 100%; max-width: 1200px; height: 50px; margin: 0 auto;}
+.depth_03 .search_box > div p {color: #fff;}
+.depth_03 .sc_button button {background-color: #00304a; margin-top: 6px;}
+
+/*----------------------------------------*/
+
+.nav_wrap {width: 100%; height: 50px; line-height: 50px; background-color: #222425; color: #fff;}
+.nav_wrap nav {width: 100%; max-width: 1200px;}
+.nav_wrap ul {}
+.nav_wrap li {width: 16.66666666666667%; text-align: center; float: left;}
+.nav_wrap a {display: block;}
+.bgc_00304a {background-color: #00304a;}
+
+/*----------------------------------------*/
+
+.prdt_dscrt {width: 100%; height: 440px; position: relative;}
+.dscrt_txt_wrap {width: 100%; max-width: 1200px; height: inherit; margin: 0 auto; position: relative;}
+.dscrt_txt_box {width: 100%; max-width: 600px; text-align: center; position: absolute; top: 70px;}
+.dscrt_txt_box h1,
+.dscrt_txt_box h2 {font-size: 38px; color: #333;}
+.dscrt_txt_box p {margin: 50px 0; color: #333;}
+.dscrt_txt_box a {font-size: 12px; background-color: #00304a; border: 1px solid #fff; color: #fff; display: inline-block; padding: 16px 68px; border-radius: 15px; transition: all 0.5s;}
+.dscrt_txt_box a:hover {background-color: #dd1921;}
+
+.dep03_introduce_txt {margin: 30px 0; padding: 0 6%;}
+.dep03_introduce_txt h2 {font-size:24px; color:#333;}
+.dep03_introduce_txt h2 + span {width:50px; height:2px; display:inline-block; background-color:#333; margin-top:20px;}
+.dep03_introduce_txt > p {max-width: 1200px; margin: 20px auto;}
+.differential {margin: 30px 0; padding: 0 6%;}
+.differential p {max-width: 1200px; margin: 20px auto;}
