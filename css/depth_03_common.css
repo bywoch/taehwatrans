@@ -300,3 +300,34 @@
 .od_spl_title .ml_0 {margin-left: 0;}
 .od_spl_title .table_wrap .s-title {display: block; font-size: 12px; float: left; margin-top: 10px;}
 .od_spl_title .table_wrap .s-unit {font-size: 12px; float: right; margin-top: 10px;}
+
+/*----------------------------------------*/
+
+.content_allbox {width: 100%; max-width: 1200px; margin: 0 auto; position: relative;}
+.content_box_01 {width: calc(100% - 300px); max-width: 870px; margin-left: 30px;}
+.content_box_01 h2 {font-weight:bold;}
+.content_box_02 {width: 270px; position: absolute; top: 0; right: 0; background-color: #fff; padding: 10px; z-index: 998;}
+.content_box_02  > p {margin:0 auto 20px; font-size: 18px;}
+.content_box_02  > ul > li {padding: 10px 0; font-size: 12px;}
+.content_box_02  > ul > li:last-child {padding: 15px 0; border-top: 1px solid #00304A; border-bottom: 1px solid #00304A;}
+.content_box_02 > ul li:hover {background-color: #e2e2e2;}
+.content_box_02 > ul li a {display: block; padding-left: 5px; transition: all 0.5s;}
+.content_box_02 > ul li a.on{font-weight: bold; color: #00304a; border-left: 3px solid #00304a; padding-left: 10px;}
+
+/*----------------------------------------*/
+
+.zp_ct_d3 .tqp_srs_img > p {color: #00304a; text-align: left; margin-top: 20px; margin-left: 25px; font-weight: 600;}
+.zp_ct_d3 .tqp_srs_img > p:first-child {margin-top: 0;}
+.zp_ct_d3 .ts_imgtxt01 .tsrs_box p {text-align: left;}
+.zp_ct_d3 .ts_imgtxt01 .tsrs_box h5 {font-weight: bold; color: #00304a; text-align: left;}
+.zp_ct_d3 .ts_imgtxt01 .tsrs_box .tsrs_img, .zp_ct_d3 .ts_imgtxt02 .tsrs_box .tsrs_txt {display: inline-block; width: 50%; float: left;}
+.zp_ct_d3 .ts_imgtxt01 .tsrs_box .tsrs_img img {display: block; max-width: 249px; margin: 0 auto;}
+
+/*----------------------------------------*/
+
+.select_box option:first-child {color: #ddd;}
+.new_prdt, .dep03_introduce_txt > p, .ftrs_box > div.ft_txtbox, .srs_bx_01 .tqp_srs_txt, .srs_bx_02, .content_box_02, .dscrt_txt_box p,.dscrt_txt_box h1, .dscrt_txt_box h2, .dep03_introduce_txt h2, .tabs-content tr td, .od_spl_imgBox p, .tabs-content .tab p, .tabs-content p, .od_spl_title p, .tsrs_txt p, .tqp_srs_img .ts_img_p p, .tqp_srs_img p strong, .graph_imgBox p, .tabs-content tr td.c_234c63, .differential h2, .differential p {color: #6D6E70;}
+ {color: #234c63;}
+.d_b768 {display: none;}
+
+.ftrs_box > div{}
