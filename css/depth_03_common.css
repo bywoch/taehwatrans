@@ -205,7 +205,7 @@
 .dp_768_y, .spcfct_slt .dp_768_y, .spcfct_slt .spcfct_table {display: none;}
 .pp_as_ask_box h3 {font-weight: bold; margin-bottom: 10px;}
 
-/*--------------------18-11-15-Table_TabMenu--------------------*/
+/*--------------------Table_TabMenu--------------------*/
 
 [ripple] {z-index: 1; position: relative; overflow: hidden;}
 
@@ -429,4 +429,53 @@
     
     .zp_ct_d3 .tqp_srs_img > p {text-align: center; margin-left: 0;}
     
+}
+
+@media (max-width: 480px) {
+    
+    .prdt_dscrt {background-position: -990px 0px;}
+    .scrtabs-tabs-fixed-container {width: 89.9% !important;}
+    .visual_box {height: 485px;}
+    .prllgr {height: 210px;}
+    .dscrt_txt_box {top: 50%; left: 0; margin-left: 0; margin-top: -146px;}
+    .visual_txt p {font-size: 26px;}
+    .od_spl_title {margin-top: 120px; margin-bottom: 60px;}
+    .srs_txt_title h2,
+    .srs_txt_title h4 {width: 100%; text-align: center;}
+    .srs_txt_title span {width: 40%; height: 3px; background-color: #00304a; display: block; margin: 0 30%; margin-top: 15px;}
+    .tqp_srs_txt {height: 100%;}
+    .tqp_srs_img {margin-top: 30px;}
+    .txt_al_r {text-align: center;}
+    .tt_w_l span {margin-bottom: 10px;}
+    .tt_w_02 p {text-align: center; margin: 40px 0; padding: 0 1%;}
+    .srs_txt_p {text-align: center; width: 100%;}
+    .srs_img_02 {background-size: 90%; background-position: 10px -10px;}
+    .nav_wrap {height: 100%; position: static !important;}
+    .nav_wrap li {width: 50%;}
+    .depth_03 .scrtabs-tab-scroll-arrow {width: 10% !important;}
+    .depth_03 .scrtabs-tabs-fixed-container {width: 80% !important;}
+    .depth_03 .scrtabs-tab-scroll-arrow {padding: 14px 0 6px 12px;}
+    .depth_03 .prdt_dscrt {background-position: -720px 0px;}
+    .content_box_02 {height: 151px; top: -621px !important;}
+    .flxb_ci .content_box_02 {height: 201px;}
+    .content_box_02  > ul > li, .rgm_ct .content_box_02  > ul > li, .pm_ct .content_box_02  > ul > li, .rgm_ct .content_box_02  > ul > li, .dci_ct .content_box_02  > ul > li, .ms_ct .content_box_02  > ul > li, .content_box_02  > ul > li, .pmhm_ct .content_box_02  > ul > li, .sldldw_ci .content_box_02  > ul > li, .flxb_ci .content_box_02  > ul > li, .clpo_rgsk_ci .content_box_02  > ul > li {width: 50%;}
+    .dscrt_txt_box p {margin: 25px 0;}
+    
+}
+
+@media (max-width: 375px) {
+
+    .depth_03 .scrtabs-tab-scroll-arrow {padding: 14px 0 6px 8px;}
+
+}
+
+/* outdoor split core 페이지 도면 사이즈 수정 - */
+.w-change .tqp_srs_txt {width: 32%;}
+.w-change .srs_txt_title {margin: 0;}
+.w-change .tqp_srs_img {width: 68%;}
+
+@media (max-width: 768px) {
+    .w-change .tqp_srs_txt {width: 100%;}
+    .w-change .srs_txt_title {width: 50%; margin: 0 auto 25px;}
+    .w-change .tqp_srs_img {width: 100%;}
 }
