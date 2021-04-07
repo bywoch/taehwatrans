@@ -519,3 +519,19 @@
 .tqp_srs_box.single .tqp_srs_img .wb-list .wb-item {width: 100%;max-width: 450px;}
 .spcfct_box table {border-bottom:2px solid #8a96a2}
 .eltrc_prpts_wrap table {border-bottom:0.01em solid #d1d1d1 !important}
+
+table {border-collapse: collapse;}
+table tr td, table tr th {border-width: 0.01em !important;border-style: solid;border-left:0;border-top:0;}
+table tr:first-child {border-top: 0.01em solid #d1d1d1;}
+table tr td:first-child, table tr th:first-child {border-left: 0.01em solid #d1d1d1}
+@media (max-width: 769px) {
+    .tqp_srs_box.single {flex-wrap: wrap;}
+    .tqp_srs_box.single .tqp_srs_img {height: auto;width:100%}
+    .tqp_srs_box.single .tqp_srs_box {height: 100%; margin-bottom: 0;flex-direction: column;justify-content: center;}
+    .srs_bx_01 .tqp_srs_txt {width: 100%}
+    .srs_txt_title {width: 100%;flex-direction: column;justify-content: center;}
+    .srs_txt_title span {margin-bottom: 15px;}
+    .srs_txt_title h2, .srs_txt_title h4 {margin-right: 0;margin-bottom: 15px}
+    .srs_txt_p {margin: 0 auto;}
+    .srs_txt_p {width: 100%;max-width:365px;word-break: break-all;padding: 0 10px}
+}
