@@ -54,6 +54,46 @@ $(document).ready(function () {
         });
     }
 
+    // Tabs
+    $('.tabs-header a').on('click', function (e) {
+        e.preventDefault();
+
+        // Tab Id
+        var tabId = $(this).attr('tab-id');
+
+        // Remove Active State
+        $('.tabs-header a').stop().parent().removeClass('active');
+
+        // Add Active State
+        $(this).stop().parent().addClass('active');
+
+        changePos();
+
+        // Update Current Itm
+        tabCurrentItem = tabItems.filter('.active');
+
+        // Remove Active State
+        $('.tab').stop().fadeOut(300, function () {
+            // Remove Class
+            $(this).removeClass('active');
+        }).hide();
+
+        // Add Active State
+        $('.tab[tab-id="' + tabId + '"]').stop().fadeIn(300, function () {
+            // Add Class
+            $(this).addClass('active');
+
+            // Animate Height
+            animateTabHeight();
+        });
+    });
+
+    // Tab Items
+    var tabItems = $('.tabs-header ul li');
+
+    // Tab Current Item
+    var tabCurrentItem = tabItems.filter('.active');
+
     
     
 });
