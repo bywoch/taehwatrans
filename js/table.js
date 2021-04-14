@@ -128,7 +128,7 @@ $(document).ready(function () {
 
         changePos();
         changeTab();
-    });*/
+    });
 
     // Ripple
     $('[ripple]').on('click', function (e) {
