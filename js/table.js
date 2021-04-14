@@ -94,6 +94,59 @@ $(document).ready(function () {
     // Tab Current Item
     var tabCurrentItem = tabItems.filter('.active');
 
-    
+    // Next Button
+    $('#next').on('click', function (e) {
+        e.preventDefault();
+
+        var nextItem = tabCurrentItem.next();
+
+        tabCurrentItem.removeClass('active');
+
+        if (nextItem.length) {
+            tabCurrentItem = nextItem.addClass('active');
+        } else {
+            tabCurrentItem = tabItems.first().addClass('active');
+        }
+
+        changePos();
+        changeTab();
+    });
+
+    // Prev Button
+    $('#prev').on('click', function (e) {
+        e.preventDefault();
+
+        var prevItem = tabCurrentItem.prev();
+
+        tabCurrentItem.removeClass('active');
+
+        if (prevItem.length) {
+            tabCurrentItem = prevItem.addClass('active');
+        } else {
+            tabCurrentItem = tabItems.last().addClass('active');
+        }
+
+        changePos();
+        changeTab();
+    });*/
+
+    // Ripple
+    $('[ripple]').on('click', function (e) {
+        var rippleDiv = $('<div class="ripple" ></div>'),
+            rippleOffset = $(this).offset(),
+            rippleY = e.pageY - rippleOffset.top,
+            rippleX = e.pageX - rippleOffset.left,
+            ripple = $('.ripple');
+
+        rippleDiv.css({
+            top: rippleY - (ripple.height() / 2),
+            left: rippleX - (ripple.width() / 2),
+            background: $(this).attr("ripple-color")
+        }).appendTo($(this));
+
+        window.setTimeout(function () {
+            rippleDiv.remove();
+        }, 1500);
+    });
     
 });
