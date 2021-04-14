@@ -94,7 +94,7 @@ $(document).ready(function () {
     // Tab Current Item
     var tabCurrentItem = tabItems.filter('.active');
 
-    // Next Button
+    /*// Next Button
     $('#next').on('click', function (e) {
         e.preventDefault();
 
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
         changePos();
         changeTab();
-    });
+    });*/
 
     // Ripple
     $('[ripple]').on('click', function (e) {
