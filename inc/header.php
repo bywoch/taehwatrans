@@ -2,59 +2,59 @@
     <div class="drop"></div>
     <div class="header_box">
         <div class="logo">
-            <a href="/index.php"><img src="../img/logo.png" alt="태화트랜스 로고"></a>
+            <a href="/index.php"><img src="../img/logo.png" alt="Taehwatrans logo"></a>
+        <</div>
         </div>
         <div class="lgg_slt"></div>
         <div class="menu_wrap">
-            <div class="util_menu cf">
-                <ul class="cf">
-                    <li><a href="#">한글</a></li>
-                    <li><a href="#" class="a4a6a5">English</a></li>
-                </ul>
-                <ul class="cf">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Inquiry</a></li>
-                </ul>
+            <div class="util_menu_bgc">
+                <div class="util_menu_box">
+                    <div class="util_menu cf">                        
+                        <ul class="um_cai cf">
+							<li class="e_catalogue"><a href="/ebook/220712" target="_blank">E-catalogue</a></li>
+                            <li><a href="/aboutus">About us</a></li>
+                            <li><a href="/contacts">Contact us</a></li>
+                            <li class="pr_n"><a href="/inquiry">Inquiry</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav class="menu">
-                <ul class="cf">
-                    <li class="drop_down">
-                        <a href="/Solid_CT/Solid_CT.php">Solid CT for Energy Meters</a>
-                        <ul class="sub_menu">
-                            <li><a href="/Solid_CT/Revenue_Grade_Metering_CT.php">Revenue Grade Metering CT</a></li>
-                            <li><a href="/Solid_CT/Protection&Monitoring_CT.php">Protection&amp;Monitoring CT</a></li>
-                            <li><a href="/Solid_CT/DC_Immune_CT.php">DC Immune CT</a></li>
-                            <li><a href="/Solid_CT/Voltage_Measurement_CT.php">Voltage Measurement CT</a></li>
-                            <li><a href="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">Multi-Harmonics Monitoring CT</a></li>
-                            <li><a href="/Solid_CT/High_Frequency_Monitoring_CT.php">High Frequency Monitoring CT</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop_down">
-                        <a href="/Split-core_CT/Split-core_CT.php">Split-core CT</a>
-                        <ul class="sub_menu">
-                            <li><a href="/Split-core_CT/Miniature-Split-core_CT.php">Miniature Split-core CT</a></li>
-                            <li><a href="/Split-core_CT/Busbar-Split-core_CT.php">Busbar Split-core CT</a></li>
-                            <li><a href="/Split-core_CT/Outdoor-Split-Core-transformer.php">Outdoor Split-core CT</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop_down">
-                        <a href="/Rogowski_Coils/Rogowski_Coils.php">Rogowski Coils</a>
-                        <ul class="sub_menu">
-                            <li><a href="/Rogowski_Coils/Solid-Leadwire_Rogowski_Coils.php">Solid/ Leadwire Rogowski coils</a></li>
-                            <li><a href="/Rogowski_Coils/Flexible_Rogowski_Coils.php">Flexible Rogowski coils</a></li>
-                            <li><a href="/Rogowski_Coils/Ruggedized_Clamp-on_Rogowski_Coils.php">Ruggedized Clamp-on Rogowski coils</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/Zero-Phase_CT/Zero-Phase_CT_Dep02.php">Zero Phase CT</a></li>
-                    <li class="drop_down">
-                        <a href="/Custom_Current_Sensors/Custom_Current_Sensors.php">Custom Current Sensors</a>
-                        <ul class="sub_menu">
-                            <!--<li><a href="/Custom_Current_Sensors/Energy_Harvesting_Rogowski_Coils.php">CT for Air Circuit Breaker</a></li>-->
-                            <li><a href="/Custom_Current_Sensors/Energy_Harvesting_Rogowski_Coils.php">Energy Harvesting Rogowski Coils</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu_bgc">
+                <nav class="menu">
+                    <ul class="cf">
+                        <li class="drop_down">
+                            <a href="/Solid_CT/Solid_CT.php" class="pe_n_768">Solid CTs for Metering <br> &amp; monitoring</a>
+                            <ul class="sub_menu">
+                                <li><a href="/Solid_CT/Revenue_Grade_Metering_CT.php">Revenue Grade Metering CTs</a></li>
+                                <li><a href="/Solid_CT/Protection&Monitoring_CT.php">Protection&amp;Monitoring CTs</a></li>
+                                <li><a href="/Solid_CT/DC_Immune_CT.php">DC Immune CTs</a></li>
+                                <li><a href="/Solid_CT/Voltage_Measurement_CT.php">Voltage Measurement CTs</a></li>
+                                <li><a href="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">Multi-Harmonics <br> / High Frequency Monitoring CTs</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop_down">
+                            <a href="/Split-core_CT/Split-core_CT.php" class="pe_n_768">Split-core <br> CTs</a>
+                            <ul class="sub_menu">
+                                <li><a href="/Split-core_CT/Miniature-Split-core_CT.php">Miniature Split-core CTs</a></li>
+                                <li><a href="/Split-core_CT/Busbar-Split-core_CT.php">Busbar Split-core CTs</a></li>
+                                <li><a href="/Split-core_CT/Outdoor-Split-Core-transformer.php">Outdoor Split-Core CTs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Zero-Phase_CT/Zero-Phase_CT.php">Zero Phase <br> CTs (ZCT)</a></li>
+                        <li class="drop_down m_rgsk_ci">
+                            <a href="/Rogowski_Coils/Rogowski_Coils.php" class="pe_n_768 one-line">Rogowski Coils</a>
+                            <ul class="sub_menu">
+                                <li><a href="/Rogowski_Coils/Rigid_Rogowski_Coils.php">Rigid Rogowski Coils</a></li>
+                                <li><a href="/Rogowski_Coils/Flexible_Rogowski_Coils.php">UL Listed R-coil<br>/ High Frequency R-coil</a></li>
+                                <li><a href="/Rogowski_Coils/MV_Flexible_Rogowski_Coils.php">MV Flexible Rogowski Coils</a></li>
+                                <li><a href="/Rogowski_Coils/Clamp-on_Rogowski_Coils.php">Clamp-on Rogowski Coils</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/ACB_CTs/ACB_CTs.php" class="one-line">ACB CTs</a></li>
+                        <li><a href="https://www.a-eberle.de/en/product-groups/pq-mobile/devices" target="_blank" class="pr_n">Power Quality <br> Analyzer</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <button class="menu-trigger">
             <span></span>
