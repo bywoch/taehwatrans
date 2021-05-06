@@ -144,31 +144,6 @@ $(function () {
 
     /*----------------------------------------*/
 
-    /*
-    $('.slider').bxSlider({
-        speed: 1000,
-        pause: 3000,
-        auto: true,
-        autoHover: true,
-        controls: true,
-        autoControls: true
-    });
-
-    $('.slider').on(function (bxSlider, onSlideAfter) {
-        $('.pc .slider > li .slider_txt_box p').css('opacity', '1').addClass('fa_i_dw');
-        $('.pc .slider > li .slider_txt_box span').css('opacity', '1');
-        $('.pc .slider > li .slider_txt_box a').css('opacity', '1').addClass('fa_i_up2');
-    });
-
-    $('.slider').on(function (bxSlider, onSlideBefore) {
-        $('.pc .slider > li .slider_txt_box p').css('transition', 'all 0.5s').css('opacity', '0').removeClass('fa_i_dw');
-        $('.pc .slider > li .slider_txt_box span').css('transition', 'all 0.5s').css('opacity', '0');
-        $('.pc .slider > li .slider_txt_box a').css('transition', 'all 0.5s').css('opacity', '0').removeClass('fa_i_up2');
-    });
-    */
-
-    /*----------------------------------------*/
-
     // 자세히 보기 PC Ver.
     $('.pc .spcfct_slt > .slt_bt_02').on('click', function () {
         $('.pc .spcfct_box > .tb_02').css('opacity', '1');
@@ -291,34 +266,6 @@ $(function () {
     });
 
     /*----------------------------------------*/
-    /*
-    $('.pc .nv_m_01').click(function () {
-        $('html, body').animate({
-            scrollTop: 1483
-        }, 500);
-    });
-    $('.pc .nv_m_02').click(function () {
-        $('html, body').animate({
-            scrollTop: 2090
-        }, 500);
-    });
-    $('.pc .nv_m_03').click(function () {
-        $('html, body').animate({
-            scrollTop: 2847
-        }, 500);
-    });
-    $('.pc .nv_m_04').click(function () {
-        $('html, body').animate({
-            scrollTop: 3687
-        }, 500);
-    });
-    $('.pc .nv_m_05').click(function () {
-        $('html, body').animate({
-            scrollTop: 4443
-        }, 500);
-    });
-    */
-    /*----------------------------------------*/
 
     $(".nav_wrap li a").click(function (event) {
         event.preventDefault();
@@ -373,10 +320,4 @@ $(function () {
 
     /*----------------------------------------*/
     
-    
-    
-    /*----------------------------------------*/
-
-
-
 });
