@@ -144,6 +144,31 @@ $(function () {
 
     /*----------------------------------------*/
 
+    /*
+    $('.slider').bxSlider({
+        speed: 1000,
+        pause: 3000,
+        auto: true,
+        autoHover: true,
+        controls: true,
+        autoControls: true
+    });
+
+    $('.slider').on(function (bxSlider, onSlideAfter) {
+        $('.pc .slider > li .slider_txt_box p').css('opacity', '1').addClass('fa_i_dw');
+        $('.pc .slider > li .slider_txt_box span').css('opacity', '1');
+        $('.pc .slider > li .slider_txt_box a').css('opacity', '1').addClass('fa_i_up2');
+    });
+
+    $('.slider').on(function (bxSlider, onSlideBefore) {
+        $('.pc .slider > li .slider_txt_box p').css('transition', 'all 0.5s').css('opacity', '0').removeClass('fa_i_dw');
+        $('.pc .slider > li .slider_txt_box span').css('transition', 'all 0.5s').css('opacity', '0');
+        $('.pc .slider > li .slider_txt_box a').css('transition', 'all 0.5s').css('opacity', '0').removeClass('fa_i_up2');
+    });
+    */
+
+    /*----------------------------------------*/
+
     // 자세히 보기 PC Ver.
     $('.pc .spcfct_slt > .slt_bt_02').on('click', function () {
         $('.pc .spcfct_box > .tb_02').css('opacity', '1');
@@ -251,7 +276,9 @@ $(function () {
     /*----------------------------------------*/
 
     //Select animation Function
-    $(window).scroll(function () { // 사용자가 스크롤을 움직였을 때 이벤트 실행
+    
+    
+    /*$(window).scroll(function () { // 사용자가 스크롤을 움직였을 때 이벤트 실행
         var scr = $(window).scrollTop(); // 변수에 스크롤이 움직인 값을 저장.
         $("h1").text(scr); // 변수에 저장된 값을 h1태그에 출력.
 
@@ -263,8 +290,52 @@ $(function () {
             $(".pc .serch_wrap, .pc .nav_wrap").css('position', 'static');
         }
 
-    });
+    });*/
+    
 
+    $(window).scroll(function () { // 사용자가 스크롤을 움직였을 때 이벤트 실행
+        var scr = $(window).scrollTop(); // 변수에 스크롤이 움직인 값을 저장.
+        $("h1").text(scr); // 변수에 저장된 값을 h1태그에 출력.
+
+        if (scr > 80) { // scr값이 80보다 크면
+            $(".pc .serch_wrap").css('position', 'fixed').css('top', '0px').css('z-index', '999');
+            $(".pc .nav_wrap").css('position', 'fixed').css('top', '51px').css('z-index', '999');
+        } else {
+            $(".pc .serch_wrap, .pc .nav_wrap").css('position', 'static');
+        }
+
+    });
+    
+    /*----------------------------------------*/
+    
+    /*
+    $('.pc .nv_m_01').click(function () {
+        $('html, body').animate({
+            scrollTop: 1483
+        }, 500);
+    });
+    $('.pc .nv_m_02').click(function () {
+        $('html, body').animate({
+            scrollTop: 2090
+        }, 500);
+    });
+    $('.pc .nv_m_03').click(function () {
+        $('html, body').animate({
+            scrollTop: 2847
+        }, 500);
+    });
+    $('.pc .nv_m_04').click(function () {
+        $('html, body').animate({
+            scrollTop: 3687
+        }, 500);
+    });
+    $('.pc .nv_m_05').click(function () {
+        $('html, body').animate({
+            scrollTop: 4443
+        }, 500);
+    });
+    */
+    
     /*----------------------------------------*/
 
     $(".nav_wrap li a").click(function (event) {
@@ -302,7 +373,7 @@ $(function () {
         $('.tab_btn_right').show();*/
     });
 
-    $('.tab_btn_left').hide();
+    $('.tab_btn_left').css('opacity', '0');
     $(".tabs-content").scroll(function () {
 
         var scrollT = $(this).scrollLeft(); //스크롤바의 좌측위치
@@ -310,14 +381,20 @@ $(function () {
         var contentH = $(".tabs").width(); //문서 전체 내용을 갖는 div의 넓이
 
         if (scrollT + scrollH >= contentH) { // 스크롤바가 맨 오른쪽에 위치할 때
-            $('.tab_btn_left').show();
-            $('.tab_btn_right').hide();
+            $('.tab_btn_left').css('opacity', '1');
+            $('.tab_btn_right').css('opacity', '0');
         } else {
-            $('.tab_btn_left').hide();
-            $('.tab_btn_right').show();
+            $('.tab_btn_left').css('opacity', '0');
+            $('.tab_btn_right').css('opacity', '1');
         }
     });
 
     /*----------------------------------------*/
-    
+
+
+
+    /*----------------------------------------*/
+
+
+
 });
