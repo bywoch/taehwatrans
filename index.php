@@ -35,7 +35,8 @@
                         <p class="sc_tt_01_768 ds_bl_768">Search</p>
                     </div>
                     <div class="sc_tt_02 ds_n_768" data-tab="tab-2">
-                        <p class="tt_02_l_txt" style="display: none;">Taehwatrans for all of you | <strong>Information</strong></p>
+                        <p class="tt_02_l_txt" style="display: none;">Taehwatrans for all of you |
+                            <strong>Information</strong></p>
                         <p class="tt_02_s_txt">Information</p>
                     </div>
                 </div>
@@ -49,7 +50,8 @@
                                 <p>Product</p>
                                 <legend class="blind">Product</legend>
                                 <p>
-                                    <select name=" " class="select" onChange="showSub(this.options[this.selectedIndex].value);">
+                                    <select name=" " class="select"
+                                        onChange="showSub(this.options[this.selectedIndex].value);">
                                         <option value="0" selected="select">Product</option>
                                         <option value="1">Solid CTs for Metering &amp; monitoring</option>
                                         <option value="2">Split-core CTs</option>
@@ -65,39 +67,62 @@
                                 <legend class="blind">Category</legend>
                                 <p>
                                     <select name="SUB0" class="select" style="display: ;">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                     </select>
-                                    <select name="SUB1" class="select1 select" style="display: none;" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                    <select name="SUB1" class="select1 select" style="display: none;"
+                                        onchange="if(this.value) location.href=(this.value);">
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                         <option value="/Solid_CT/Solid_CT.php">Main</option>
-                                        <option value="/Solid_CT/Revenue_Grade_Metering_CT.php">Revenue Grade Metering CT</option>
-                                        <option value="/Solid_CT/Protection&Monitoring_CT.php">Protection&amp;Monitoring CT</option>
+                                        <option value="/Solid_CT/Revenue_Grade_Metering_CT.php">Revenue Grade Metering
+                                            CT</option>
+                                        <option value="/Solid_CT/Protection&Monitoring_CT.php">Protection&amp;Monitoring
+                                            CT</option>
                                         <option value="/Solid_CT/DC_Immune_CT.php">DC Immune CT</option>
-                                        <option value="/Solid_CT/Voltage_Measurement_CT.php">Voltage Measurement CT</option>
-                                        <option value="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">Multi-Harmonics Monitoring CT</option>
-                                        <option value="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">High Frequency Monitoring CT</option>
+                                        <option value="/Solid_CT/Voltage_Measurement_CT.php">Voltage Measurement CT
+                                        </option>
+                                        <option value="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">Multi-Harmonics
+                                            Monitoring CT</option>
+                                        <option value="/Solid_CT/Multi-Harmonics_Monitoring_CT.php">High Frequency
+                                            Monitoring CT</option>
                                     </select>
-                                    <select name="SUB2" class="select1 select" style="display: none;" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                    <select name="SUB2" class="select1 select" style="display: none;"
+                                        onchange="if(this.value) location.href=(this.value);">
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                         <option value="/Split-core_CT/Split-core_CT.php">Main</option>
-                                        <option value="/Split-core_CT/Miniature-Split-core_CT.php">Miniature Split-core CT</option>
-                                        <option value="/Split-core_CT/Busbar-Split-core_CT.php">Busbar Split-core CT</option>
-                                        <option value="/Split-core_CT/Outdoor-Split-Core-transformer.php">Outdoor Split-Core CT</option>
+                                        <option value="/Split-core_CT/Miniature-Split-core_CT.php">Miniature Split-core
+                                            CT</option>
+                                        <option value="/Split-core_CT/Busbar-Split-core_CT.php">Busbar Split-core CT
+                                        </option>
+                                        <option value="/Split-core_CT/Outdoor-Split-Core-transformer.php">Outdoor
+                                            Split-Core CT</option>
                                     </select>
-                                    <select name="SUB3" class="select1 select" style="display: none;" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                    <select name="SUB3" class="select1 select" style="display: none;"
+                                        onchange="if(this.value) location.href=(this.value);">
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                         <option value="/Zero-Phase_CT/Zero-Phase_CT.php">Zero Phase CT</option>
                                     </select>
-                                    <select name="SUB4" class="select1 select" style="display: none;" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                    <select name="SUB4" class="select1 select" style="display: none;"
+                                        onchange="if(this.value) location.href=(this.value);">
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                         <option value="/Rogowski_Coils/Rogowski_Coils.php">Main</option>
-                                        <option value="/Rogowski_Coils/Rigid_Rogowski_Coils.php">Rigid Rogowski Coils</option>
-                                        <option value="/Rogowski_Coils/Flexible_Rogowski_Coils.php">Flexible Rogowski Coils</option>
-                                        <option value="/Rogowski_Coils/MV_Flexible_Rogowski_Coils.php">MV Flexible Rogowski Coils</option>
-                                        <option value="/Rogowski_Coils/Clamp-on_Rogowski_Coils.php">Clamp on Rogowski Coils</option>
+                                        <option value="/Rogowski_Coils/Rigid_Rogowski_Coils.php">Rigid Rogowski Coils
+                                        </option>
+                                        <option value="/Rogowski_Coils/Flexible_Rogowski_Coils.php">Flexible Rogowski
+                                            Coils</option>
+                                        <option value="/Rogowski_Coils/MV_Flexible_Rogowski_Coils.php">MV Flexible
+                                            Rogowski Coils</option>
+                                        <option value="/Rogowski_Coils/Clamp-on_Rogowski_Coils.php">Clamp on Rogowski
+                                            Coils</option>
                                     </select>
-                                    <select name="SUB5" class="select1 select" style="display: none;" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="">------------------------------ Category ------------------------------</option>
+                                    <select name="SUB5" class="select1 select" style="display: none;"
+                                        onchange="if(this.value) location.href=(this.value);">
+                                        <option value="">------------------------------ Category
+                                            ------------------------------</option>
                                         <option value="/ACB_CTs/ACB_CTs.php">ACB &amp; GIS Current Transformer</option>
                                     </select>
                                 </p>
